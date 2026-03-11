@@ -189,6 +189,17 @@ Robots communicate with the main system via **WiFi**.
 
 Edge nodes run **micro-ROS**.
 
+### Controllers: Atlas DS / Tricorder
+
+terrAIn uses **Atlas DS** and **Tricorder** as the controller platform. The **dual-screen (DS) layout is the best fit**: bottom screen = **bed view** (overhead terrain map from the gantry), top screen = **vehicle view** (live camera feed from the selected robot).
+
+- **Bottom screen — bed view:** Overhead map of the 4×8 bed, robot positions, terrain height or task overlay. Plan and supervise from above.
+- **Top screen — vehicle view:** First-person or chase camera from the Huina vehicle. Drive, aim the bucket, or monitor autonomy.
+
+One handheld gives you both the big picture and the driver’s seat; manual override, teleop, and field configuration in a single workflow. Same stack across terrAIn Home and Research.
+
+**Docs and firmware:** [atlas.inquiry.institute](https://atlas.inquiry.institute)
+
 ---
 
 ## ROS2 Architecture
