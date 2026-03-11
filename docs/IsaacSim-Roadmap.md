@@ -23,10 +23,13 @@ terrAIn uses **NVIDIA Isaac Sim** for simulation-based training and sim-to-real 
 
 ### 1.2 Robot assets and kinematics
 
-- [ ] **Excavator** (Huina 1550–scale): CAD or simplified URDF/USD with arm, bucket, tracks.
-- [ ] **Dump truck**: body, dump bed articulation.
-- [ ] **Bulldozer**: blade, tracks.
-- [ ] **Joint and drive setup**: match real ESP32 PWM ranges and kinematics where possible.
+All robot assets use **Huina** as the reference platform; sim geometry and kinematics should match Huina chassis for sim-to-real transfer.
+
+- [ ] **Excavator** (Huina 1550 / 1580): CAD or simplified URDF/USD with arm, bucket, tracks.
+- [ ] **Dump truck** (Huina): body, dump bed articulation.
+- [ ] **Bulldozer** (Huina): blade, tracks.
+- [ ] **Loader** (Huina): front loader kinematics (optional).
+- [ ] **Joint and drive setup**: match real ESP32 PWM ranges and Huina kinematics where possible.
 - [ ] **Sensors**: raycast or simulated depth/ToF; IMU noise model.
 
 ### 1.3 ROS2 bridge (Isaac Sim ↔ ROS2)

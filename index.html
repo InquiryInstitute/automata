@@ -75,6 +75,11 @@
     .card h3 { font-size: 1rem; margin: 0 0 0.5rem; color: var(--text); }
     .card p { margin: 0; font-size: 0.9rem; }
     .card .price { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 500; margin-top: 0.5rem; }
+    .product-line { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .product-line .card { padding: 1rem; }
+    .product-line .card h3 { font-size: 0.95rem; }
+    .product-line .card .price { font-size: 0.85rem; }
+    .product-line .base { grid-column: 1 / -1; max-width: 400px; }
     footer {
       padding: 2rem 0 3rem;
       border-top: 1px solid var(--border);
@@ -122,7 +127,7 @@
       <h2>System at a Glance</h2>
       <ul class="layers">
         <li>Physical terrain — 4×8 ft bed (greenhouse- and garden-bed scale), soil/sand/gravel, optional irrigation</li>
-        <li>Autonomous robots — RC excavators, trucks, dozers; ESP32-S3, micro-ROS</li>
+        <li>Autonomous robots — Huina excavators (1550/1580), dump truck, bulldozer, loader; ESP32-S3, micro-ROS</li>
         <li>Perception — overhead gantry, RGB/depth, terrain mapping</li>
         <li>AI planning — ROS2 server (Jetson), coordination, deployment</li>
         <li>Simulation — NVIDIA Isaac Sim for training and sim-to-real transfer</li>
@@ -148,17 +153,50 @@
 
   <section>
     <div class="wrap">
+      <h2>Product Line</h2>
+      <p>All vehicles are based on <strong>Huina</strong> RC construction models. We assume Huina as the reference platform — excavator (1550/1580), dump truck, bulldozer, loader — plus the Jetson base station. Mix and match for your bed size and budget.</p>
+      <div class="product-line">
+        <div class="card">
+          <h3>Huina Excavator</h3>
+          <p>1550 / 1580. Tracked, arm + bucket. Dig, trench, load. 1:14 scale.</p>
+          <p class="price">$65 – $85</p>
+        </div>
+        <div class="card">
+          <h3>Huina Dump Truck</h3>
+          <p>Haul soil, gravel. Articulated dump bed. Pairs with excavator.</p>
+          <p class="price">$55 – $75</p>
+        </div>
+        <div class="card">
+          <h3>Huina Bulldozer</h3>
+          <p>Tracked dozer, blade. Grade, level, push. Terrain shaping.</p>
+          <p class="price">$60 – $80</p>
+        </div>
+        <div class="card">
+          <h3>Huina Loader</h3>
+          <p>Front loader / wheel loader. Load, carry, place material.</p>
+          <p class="price">$55 – $75</p>
+        </div>
+        <div class="card base">
+          <h3>Jetson Base Station</h3>
+          <p>NVIDIA Jetson Orin Nano. ROS2, perception, terrain mapping, multi-robot coordination. Optional overhead gantry kit.</p>
+          <p class="price">$499 – $599</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
       <h2>Product Tiers</h2>
-      <p>From a single raised-bed kit for makers and gardeners to a full research rig with multiple robots and perception — same soil, same scale.</p>
+      <p>Bundles that combine vehicles, base station, and optional bed. From a single raised-bed kit for makers and gardeners to a full research rig with multiple robots and perception — same soil, same scale.</p>
       <div class="cards">
         <div class="card">
           <h3>terrAIn Home</h3>
-          <p>One bed kit, one robot, sensors, software. Fits a backyard, shed, or greenhouse.</p>
+          <p>One bed kit, one robot (excavator or truck), base station or single-node setup, sensors, software. Fits a backyard, shed, or greenhouse.</p>
           <p class="price">$599 – $899</p>
         </div>
         <div class="card">
           <h3>terrAIn Research</h3>
-          <p>Multiple robots, perception gantry, full ROS2 stack, Isaac Sim. For labs and curricula.</p>
+          <p>Jetson base station, multiple robots (excavator, truck, dozer, loader), perception gantry, full ROS2 stack, Isaac Sim. For labs and curricula.</p>
           <p class="price">$2,000 – $4,000</p>
         </div>
       </div>

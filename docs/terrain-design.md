@@ -116,14 +116,15 @@ The bed includes:
 
 ## Robots
 
-The platform uses modified RC construction vehicles.
+The platform uses **Huina** RC construction vehicles as the reference platform. All terrAIn vehicle kits are based on Huina chassis; we assume Huina dimensions and scale for beds, simulation, and documentation.
 
-**Example base models:**
+**Reference base models (Huina):**
 
 - Huina 1550 excavator
 - Huina 1580 excavator
-- RC dump truck
-- RC bulldozer
+- Huina dump truck
+- Huina bulldozer
+- Huina loader (where applicable)
 
 ### Robot Dimensions
 
@@ -400,6 +401,31 @@ Students learn **robotics**, **AI**, **physics**, and **systems engineering** th
 
 ---
 
+## Product Line
+
+Individual robots and the base station. All vehicles run ESP32-S3 and micro-ROS; the base station runs ROS2, perception, and coordination.
+
+### Robotic construction vehicles
+
+| Product       | Huina reference | Description | Price (kit) |
+|---------------|-----------------|-------------|-------------|
+| **Excavator** | 1550 / 1580     | Tracked excavator, arm + bucket. Dig, trench, load. 1:14 scale. | $65 – $85 |
+| **Dump truck** | Huina dump truck | Haul soil, gravel. Articulated dump bed. Pairs with excavator. | $55 – $75 |
+| **Bulldozer** | Huina bulldozer  | Tracked dozer, blade. Grade, level, push. Terrain shaping. | $60 – $80 |
+| **Loader**    | Huina loader     | Front loader / wheel loader. Load, carry, place material. | $55 – $75 |
+
+Each vehicle kit includes: Huina RC base, ESP32-S3 board, motor drivers, optional IMU/depth. Add sensors and ToF as needed.
+
+### Jetson base station
+
+| Product | Description | Price |
+|---------|-------------|--------|
+| **terrAIn Base Station** | NVIDIA Jetson Orin Nano. ROS2, perception stack, terrain mapping, multi-robot coordination. Optional overhead gantry + RGB/depth kit. | $499 – $599 |
+
+One base station runs the whole fleet; add vehicles and optional gantry to scale.
+
+---
+
 ## Product Strategy
 
 Two product tiers.
@@ -408,13 +434,13 @@ Two product tiers.
 
 **Price target:** $599–$899  
 
-Includes: bed kit, one robot, sensors, software.
+Includes: bed kit, one robot (excavator or dump truck), base station or single-node setup, sensors, software.
 
 ### terrAIn Research
 
 **Price target:** $2,000–$4,000  
 
-Includes: multiple robots, perception gantry, ROS2 stack, Isaac Sim integration.
+Includes: Jetson base station, multiple robots (excavator, truck, dozer, loader), perception gantry, full ROS2 stack, Isaac Sim integration.
 
 ### Open Research Platform
 

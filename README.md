@@ -7,7 +7,7 @@ Making RC construction equipment smart with **ESP32-S3** and camera, controlled 
 - **terrAIn:** [Full design document](docs/terrain-design.md) · [Architecture](docs/architecture.md) · [Isaac Sim roadmap](docs/IsaacSim-Roadmap.md)
 - Perception and control on-device (ESP32-S3 + camera)
 - ROS2 for planning and coordination
-- Target: RC excavators, bulldozers, dump trucks in 4×8 ft terrain beds
+- Target: Huina-based RC excavators, bulldozers, dump trucks, loaders in 4×8 ft terrain beds
 
 **Site:** [terrain.inquiry.institute](https://terrain.inquiry.institute) — marketing and crowdfunding landing page.
 
