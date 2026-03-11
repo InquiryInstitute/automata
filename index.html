@@ -75,8 +75,8 @@
     .card h3 { font-size: 1rem; margin: 0 0 0.5rem; color: var(--text); }
     .card p { margin: 0; font-size: 0.9rem; }
     .card .price { font-family: 'JetBrains Mono', monospace; color: var(--accent); font-weight: 500; margin-top: 0.5rem; }
-    .product-line { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
-    .product-line .card { padding: 1rem; }
+    .product-line { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .product-line .card { padding: 1rem; overflow: hidden; }
     .product-line .card h3 { font-size: 0.95rem; }
     .product-line .card .price { font-size: 0.85rem; }
     .product-line .base { grid-column: 1 / -1; max-width: 400px; }
@@ -90,8 +90,29 @@
     footer a:hover { text-decoration: underline; }
     .badge { display: inline-block; padding: 0.2rem 0.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; font-size: 0.75rem; color: var(--muted); margin-right: 0.5rem; margin-bottom: 0.5rem; }
     .hero-img, .section-img { width: 100%; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0; display: block; }
-    .section-img { max-height: 280px; object-fit: cover; }
+    .hero-img { max-height: 320px; object-fit: contain; }
+    .section-img { max-height: 280px; object-fit: contain; }
     .fig-cap { font-size: 0.875rem; color: var(--muted); margin: -0.5rem 0 1.5rem; }
+    .product-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 55.75%;
+      overflow: hidden;
+      background: var(--bg);
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .product-img-wrap img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .product-line .base .product-img-wrap { max-width: 360px; }
     .learn-list { list-style: none; padding: 0; margin: 1rem 0 0; }
     .learn-list li { padding: 0.35rem 0; color: var(--muted); padding-left: 1.25rem; position: relative; }
     .learn-list li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
@@ -134,6 +155,7 @@
   </section>
 
   <section>
+    <div class="wrap">
       <h2>Embodied AI Meets the Garden</h2>
       <p class="lead">An open platform where autonomous construction vehicles learn on real terrain — a 4×8 ft bed of soil, sand, or gravel. Same scale as a raised garden: dig, grade, haul, and level earth where the rubber meets the dirt.</p>
       <p>terrAIn brings robotics and AI into the shed and the greenhouse. Robots prepare soil, shape terrain, and can run alongside planting experiments — while students (or researchers) learn physics, coordination, and systems thinking. Not a toy: real hardware, real code, real certification paths for those who want them.</p>
@@ -185,31 +207,31 @@
       <p>All vehicles are based on <strong>Huina</strong> RC construction models — excavator (1550/1580), dump truck, bulldozer, loader — plus the Jetson base station. Mix and match for your bed size, budget, and whether you’re running a home lab or a STEM program.</p>
       <div class="product-line">
         <div class="card">
-          <img src="assets/excavator.png" alt="Huina excavator 1550/1580">
+          <div class="product-img-wrap"><img src="assets/excavator.png" alt="Huina excavator 1550/1580" width="400" height="223"></div>
           <h3>Huina Excavator</h3>
           <p>1550 / 1580. Tracked, arm + bucket. Dig, trench, load. 1:14 scale.</p>
           <p class="price">$65 – $85</p>
         </div>
         <div class="card">
-          <img src="assets/dump-truck.png" alt="Huina dump truck">
+          <div class="product-img-wrap"><img src="assets/dump-truck.png" alt="Huina dump truck" width="400" height="223"></div>
           <h3>Huina Dump Truck</h3>
           <p>Haul soil, gravel. Articulated dump bed. Pairs with excavator.</p>
           <p class="price">$55 – $75</p>
         </div>
         <div class="card">
-          <img src="assets/bulldozer.png" alt="Huina bulldozer">
+          <div class="product-img-wrap"><img src="assets/bulldozer.png" alt="Huina bulldozer" width="400" height="223"></div>
           <h3>Huina Bulldozer</h3>
           <p>Tracked dozer, blade. Grade, level, push. Terrain shaping.</p>
           <p class="price">$60 – $80</p>
         </div>
         <div class="card">
-          <img src="assets/loader.png" alt="Huina loader">
+          <div class="product-img-wrap"><img src="assets/loader.png" alt="Huina loader" width="400" height="223"></div>
           <h3>Huina Loader</h3>
           <p>Front loader / wheel loader. Load, carry, place material.</p>
           <p class="price">$55 – $75</p>
         </div>
         <div class="card base">
-          <img src="assets/jetson-base.png" alt="Jetson base station">
+          <div class="product-img-wrap"><img src="assets/jetson-base.png" alt="Jetson base station" width="400" height="223"></div>
           <h3>Jetson Base Station</h3>
           <p>NVIDIA Jetson Orin Nano. ROS2, perception, terrain mapping, multi-robot coordination. Optional overhead gantry kit.</p>
           <p class="price">$499 – $599</p>
