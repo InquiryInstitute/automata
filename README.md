@@ -11,6 +11,10 @@ Making RC construction equipment smart with **ESP32-S3** and camera, controlled 
 
 **Site:** [automata.inquiry.institute](https://automata.inquiry.institute) — marketing and crowdfunding landing page.
 
+**Direct GitHub Pages URL (use if custom domain doesn’t resolve):**  
+[https://inquiryinstitute.github.io/automata/](https://inquiryinstitute.github.io/automata/)  
+*(no `www`, use `https`, trailing slash optional)*
+
 ## Repo
 
 - **Org:** [InquiryInstitute](https://github.com/InquiryInstitute)
