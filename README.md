@@ -11,7 +11,9 @@ Making RC construction equipment smart with **ESP32-S3** and camera, controlled 
 ## Repo
 
 - **Org:** [InquiryInstitute](https://github.com/InquiryInstitute)
-- **Site:** [automata.inquiry.institute](https://automata.inquiry.institute)
+- **Site:** [automata.inquiry.institute](https://automata.inquiry.institute) (GitHub Pages)
+
+To point the domain from AWS Route 53, see [docs/ROUTE53.md](docs/ROUTE53.md).
 
 ## License
 
