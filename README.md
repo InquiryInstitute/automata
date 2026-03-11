@@ -2,11 +2,14 @@
 
 **Castalia Institute Atelier — Embodied AI**
 
-Making RC construction equipment smart with **ESP32-S3** and camera, controlled via **ROS2**.
+Making RC construction equipment smart with **ESP32-S3** and camera, controlled via **ROS2**. This repo is the home of **TerraLab**: an open embodied AI robotics sandbox where autonomous construction vehicles learn on real terrain.
 
+- **TerraLab:** [Full design document](docs/TerraLab-Design.md) · [Architecture](docs/architecture.md) · [Isaac Sim roadmap](docs/IsaacSim-Roadmap.md)
 - Perception and control on-device (ESP32-S3 + camera)
 - ROS2 for planning and coordination
-- Target: RC excavators, bulldozers, dump trucks in controlled environments (e.g. raised beds, test arenas)
+- Target: RC excavators, bulldozers, dump trucks in 4×8 ft terrain beds
+
+**Site:** [automata.inquiry.institute](https://automata.inquiry.institute) — marketing and crowdfunding landing page.
 
 ## Repo
 
