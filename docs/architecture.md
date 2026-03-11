@@ -1,6 +1,6 @@
-# Automata Architecture
+# terrAIn Architecture
 
-System overview and data flow for the Castalia Automata embodied AI platform.
+System overview and data flow for the Castalia terrAIn embodied AI platform.
 
 ## Five-Layer System
 
@@ -37,7 +37,7 @@ flowchart TB
     end
 
     subgraph Layer4["4. AI Planning Stack"]
-        Server["Automata Server"]
+        Server["terrAIn Server"]
         Planning["Planning"]
         Coord["Robot Coordination"]
         Server --> Planning
@@ -61,7 +61,7 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    subgraph Automata_Server["Automata Server (Jetson)"]
+    subgraph terrAIn_Server["terrAIn Server (Jetson)"]
         Perception["/perception"]
         Terrain["/terrain_mapping"]
         Planning["/planning"]
@@ -83,7 +83,7 @@ flowchart LR
     Coord --> R3
     SimBridge -.->|"policy sync"| Coord
 
-    Automata_Server <-->|"WiFi DDS"| Robots
+    terrAIn_Server <-->|"WiFi DDS"| Robots
 ```
 
 ## Sim-to-Real Loop
@@ -104,7 +104,7 @@ flowchart TD
     Web["Web Interface"]
     Sched["Cloud Scheduler"]
     ROS["ROS2 Server"]
-    Lab["Automata robots"]
+    Lab["terrAIn robots"]
 
     User -->|programs, models, experiments| Web
     Web --> Sched
@@ -125,10 +125,10 @@ flowchart LR
         I2C["I2C/SPI"]
     end
 
-    WiFi <-->|"DDS"| Server["Automata Server"]
+    WiFi <-->|"DDS"| Server["terrAIn Server"]
     PWM --> Motors["H-bridge / Motors"]
     I2C --> IMU["IMU"]
     I2C --> ToF["ToF / Depth"]
 ```
 
-See [Automata-Design.md](Automata-Design.md) for full specification.
+See [terrain-design.md](terrain-design.md) for full specification.

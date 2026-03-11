@@ -1,12 +1,12 @@
-# Castalia Automata
+# Castalia terrAIn
 
 ## Embodied AI Robotics Sandbox
 
 **An open research platform for embodied intelligence.**
 
-Automata is a physical robotics environment where autonomous construction vehicles learn to interact with real terrain — in a raised bed of soil, sand, or gravel.
+terrAIn is a physical robotics environment where autonomous construction vehicles learn to interact with real terrain — in a raised bed of soil, sand, or gravel.
 
-Inspired by robotics research labs, construction automation, and the practical scale of garden and greenhouse beds, Automata brings embodied AI experimentation into homes, schools, and research environments.
+Inspired by robotics research labs, construction automation, and the practical scale of garden and greenhouse beds, terrAIn brings embodied AI experimentation into homes, schools, and research environments.
 
 The platform combines:
 
@@ -30,7 +30,7 @@ Yet intelligence evolved through interaction with matter.
 
 *Digging. Moving. Building. Shaping terrain.*
 
-Automata explores a fundamental question:
+terrAIn explores a fundamental question:
 
 **What happens when AI learns by shaping the physical world?**
 
@@ -54,7 +54,7 @@ while AI models learn physics-aware planning. The bed can double as a real garde
 
 ## System Overview
 
-Automata integrates five layers:
+terrAIn integrates five layers:
 
 1. **Physical Terrain Environment**
 2. **Autonomous Robots**
@@ -94,7 +94,7 @@ Each material produces different AI learning conditions.
 
 ### Gardening & scale
 
-The 4×8 ft bed matches common **raised garden** and **greenhouse** dimensions. Automata can sit in a backyard, on a patio, or inside a greenhouse; robots work the same soil you might plant in. Optional irrigation and moisture sensors support both robotics experiments and real planting — terrain prep and growing in one footprint.
+The 4×8 ft bed matches common **raised garden** and **greenhouse** dimensions. terrAIn can sit in a backyard, on a patio, or inside a greenhouse; robots work the same soil you might plant in. Optional irrigation and moisture sensors support both robotics experiments and real planting — terrain prep and growing in one footprint.
 
 ### Bed Features
 
@@ -195,7 +195,7 @@ Edge nodes run **micro-ROS**.
 The system uses ROS2 for coordination.
 
 ```
-Automata Server (ROS2)
+terrAIn Server (ROS2)
  ├ perception
  ├ terrain mapping
  ├ planning
@@ -209,7 +209,7 @@ Automata Server (ROS2)
 
 ### Central Compute
 
-Automata requires a central robotics server.
+terrAIn requires a central robotics server.
 
 **Recommended:** NVIDIA Jetson Orin Nano  
 
@@ -226,7 +226,7 @@ Capabilities:
 
 ## Perception System
 
-Automata includes an **overhead perception gantry**.
+terrAIn includes an **overhead perception gantry**.
 
 **Purpose:**
 
@@ -290,7 +290,7 @@ Isaac Sim
 
 ## Research Applications
 
-Automata enables experiments in:
+terrAIn enables experiments in:
 
 - **Embodied AI** — How intelligence emerges through physical interaction.
 - **Terrain manipulation** — Robots learn to modify terrain structures.
@@ -302,7 +302,7 @@ Automata enables experiments in:
 
 ## Remote Lab
 
-Automata can be exposed as a **remote robotics lab**.
+terrAIn can be exposed as a **remote robotics lab**.
 
 Students access robots through a **web interface**.
 
@@ -325,24 +325,24 @@ Cloud scheduler
  │
 ROS2 server
  │
-Automata robots
+terrAIn robots
 ```
 
 ---
 
 ## Certification Programs
 
-Automata supports certification tracks.
+terrAIn supports certification tracks.
 
-### Automata Level 1 — Robotics Foundations
+### terrAIn Level 1 — Robotics Foundations
 
 Topics: robot kinematics, sensors, microcontrollers, ROS basics.
 
-### Automata Level 2 — Embodied AI
+### terrAIn Level 2 — Embodied AI
 
 Topics: reinforcement learning, terrain perception, planning.
 
-### Automata Level 3 — Autonomous Construction
+### terrAIn Level 3 — Autonomous Construction
 
 Topics: multi-robot coordination, excavation planning, terrain modeling.
 
@@ -404,13 +404,13 @@ Students learn **robotics**, **AI**, **physics**, and **systems engineering** th
 
 Two product tiers.
 
-### Automata Home
+### terrAIn Home
 
 **Price target:** $599–$899  
 
 Includes: bed kit, one robot, sensors, software.
 
-### Automata Research
+### terrAIn Research
 
 **Price target:** $2,000–$4,000  
 
@@ -418,7 +418,7 @@ Includes: multiple robots, perception gantry, ROS2 stack, Isaac Sim integration.
 
 ### Open Research Platform
 
-Automata is intended to be:
+terrAIn is intended to be:
 
 - open source
 - extensible
@@ -434,10 +434,10 @@ AI must eventually understand **matter**, **physics**, **force**, and **terrain*
 
 Language alone is insufficient.
 
-Automata allows AI to learn **how the world pushes back**.
+terrAIn allows AI to learn **how the world pushes back**.
 
 ---
 
 ## Tagline
 
-**Automata: Where AI Learns to Move Earth.**
+**terrAIn: Where AI Learns to Move Earth.**

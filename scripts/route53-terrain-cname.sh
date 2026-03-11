@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-# Route 53: create CNAME automata.inquiry.institute -> InquiryInstitute.github.io
+# Route 53: create CNAME terrain.inquiry.institute -> InquiryInstitute.github.io
 # Run with an AWS identity that has route53:ChangeResourceRecordSets and route53:ListHostedZones.
 # Usage:
-#   export AWS_PROFILE=your-profile   # optional
-#   ./scripts/route53-automata-cname.sh
+#   export AWS_PROFILE=custodian   # or your Route 53 profile
+#   ./scripts/route53-terrain-cname.sh
 # Or with zone ID known:
-#   ZONE_ID=Z0123456789ABCDEF ./scripts/route53-automata-cname.sh
+#   ZONE_ID=Z0123456789ABCDEF ./scripts/route53-terrain-cname.sh
 
 set -e
 
 TARGET="InquiryInstitute.github.io"
-NAME="automata.inquiry.institute"
+NAME="terrain.inquiry.institute"
 
 if [[ -z "$ZONE_ID" ]]; then
   echo "Resolving hosted zone for inquiry.institute..."
@@ -25,11 +25,11 @@ echo "Using hosted zone: $ZONE_ID"
 echo "Creating CNAME: $NAME -> $TARGET"
 
 aws route53 change-resource-record-sets --hosted-zone-id "$ZONE_ID" --change-batch '{
-  "Comment": "GitHub Pages custom domain for Automata",
+  "Comment": "GitHub Pages custom domain for terrAIn",
   "Changes": [{
     "Action": "UPSERT",
     "ResourceRecordSet": {
-      "Name": "automata.inquiry.institute",
+      "Name": "terrain.inquiry.institute",
       "Type": "CNAME",
       "TTL": 300,
       "ResourceRecords": [{ "Value": "InquiryInstitute.github.io" }]
@@ -37,4 +37,4 @@ aws route53 change-resource-record-sets --hosted-zone-id "$ZONE_ID" --change-bat
   }]
 }'
 
-echo "Done. Allow a few minutes for DNS and GitHub to verify; then https://automata.inquiry.institute will serve the repo."
+echo "Done. Allow a few minutes for DNS and GitHub to verify; then https://terrain.inquiry.institute will serve the repo."

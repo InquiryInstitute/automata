@@ -1,4 +1,4 @@
-# Dependencies and tooling for Automata (ESP32-S3, camera, ROS2)
+# Dependencies and tooling for terrAIn (ESP32-S3, camera, ROS2)
 # Add pins as needed, e.g.:
 # espressif/esp-idf
 # ros2/...
