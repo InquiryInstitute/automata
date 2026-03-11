@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Automata — Castalia Institute | Where AI Learns to Move Earth</title>
-  <meta name="description" content="An open embodied AI research platform. Autonomous construction vehicles, real terrain, ROS2, and Isaac Sim. Support the campaign.">
+  <meta name="description" content="Embodied AI in the garden: autonomous RC construction vehicles on real terrain. Raised beds, soil, ROS2, Isaac Sim. Open research platform.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -84,6 +84,9 @@
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
     .badge { display: inline-block; padding: 0.2rem 0.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; font-size: 0.75rem; color: var(--muted); margin-right: 0.5rem; margin-bottom: 0.5rem; }
+    .hero-img, .section-img { width: 100%; border-radius: 8px; border: 1px solid var(--border); margin: 1.5rem 0; display: block; }
+    .section-img { max-height: 280px; object-fit: cover; }
+    .fig-cap { font-size: 0.875rem; color: var(--muted); margin: -0.5rem 0 1.5rem; }
   </style>
 </head>
 <body>
@@ -92,14 +95,15 @@
       <p class="logo">Castalia Institute <span>Atelier</span></p>
       <h1>Automata</h1>
       <p class="tagline">Where AI Learns to Move Earth.</p>
+      <img src="assets/automata-bed.png" alt="RC excavator, bulldozer, and dump truck in a raised garden bed with soil; overhead camera; greenhouse plants in background." class="hero-img">
     </div>
   </header>
 
   <section>
     <div class="wrap">
-      <h2>Embodied AI Robotics Sandbox</h2>
-      <p class="lead">An open research platform where autonomous construction vehicles learn to interact with real terrain — soil, sand, gravel — in a 4×8 ft robotics bed.</p>
-      <p>We combine AI, robotics, simulation, perception, and real-world physics into a closed-loop learning system. Not a toy: a serious foundation for research, education, and certification.</p>
+      <h2>Embodied AI Meets the Garden</h2>
+      <p class="lead">An open research platform where autonomous construction vehicles learn on real terrain — in a 4×8 ft bed of soil, sand, or gravel. The same scale as a raised garden or greenhouse bed: dig, grade, haul, and level earth where the rubber meets the dirt.</p>
+      <p>Automata brings robotics and AI into the garden shed and the greenhouse. Robots prepare soil, shape terrain, and work alongside planting and growing experiments — while learning physics and coordination. Not a toy: a serious foundation for research, education, and hands-on certification.</p>
       <a href="https://github.com/InquiryInstitute/automata" class="cta">View repo & docs →</a>
       <a href="https://github.com/InquiryInstitute/automata/blob/main/docs/Automata-Design.md" class="cta secondary">Full design document</a>
     </div>
@@ -109,7 +113,7 @@
     <div class="wrap">
       <h2>Why This Matters</h2>
       <p class="vision-quote">Most AI today is disembodied. Language models reason in text but have no physical understanding of the world. Yet intelligence evolved through interaction with matter — digging, moving, building, shaping terrain.</p>
-      <p>Automata explores: <strong>What happens when AI learns by shaping the physical world?</strong> AI must eventually understand matter, physics, force, and terrain. Automata is where AI learns how the world pushes back.</p>
+      <p>Gardening is one of the oldest ways we shape the world: till the soil, make a bed, plant, tend, harvest. Automata asks: <strong>What happens when AI learns by shaping the physical world?</strong> In a raised bed or a test arena, robots learn to move earth — and AI learns how the world pushes back.</p>
     </div>
   </section>
 
@@ -117,12 +121,14 @@
     <div class="wrap">
       <h2>System at a Glance</h2>
       <ul class="layers">
-        <li>Physical terrain environment — 4×8 ft bed, soil/sand/gravel, fiducials</li>
+        <li>Physical terrain — 4×8 ft bed (greenhouse- and garden-bed scale), soil/sand/gravel, optional irrigation</li>
         <li>Autonomous robots — RC excavators, trucks, dozers; ESP32-S3, micro-ROS</li>
-        <li>Perception system — overhead gantry, RGB/depth, terrain mapping</li>
-        <li>AI planning stack — ROS2 server (Jetson), coordination, deployment</li>
+        <li>Perception — overhead gantry, RGB/depth, terrain mapping</li>
+        <li>AI planning — ROS2 server (Jetson), coordination, deployment</li>
         <li>Simulation — NVIDIA Isaac Sim for training and sim-to-real transfer</li>
       </ul>
+      <img src="assets/automata-hero.png" alt="Illustration: RC vehicles and overhead camera in a raised garden bed." class="section-img">
+      <p class="fig-cap">Concept: terrain bed as robotics sandbox — same footprint as a garden bed.</p>
       <a href="https://github.com/InquiryInstitute/automata/blob/main/docs/architecture.md" class="cta secondary">Architecture diagrams</a>
     </div>
   </section>
@@ -143,15 +149,16 @@
   <section>
     <div class="wrap">
       <h2>Product Tiers</h2>
+      <p>From a single raised-bed kit for makers and gardeners to a full research rig with multiple robots and perception — same soil, same scale.</p>
       <div class="cards">
         <div class="card">
           <h3>Automata Home</h3>
-          <p>Bed kit, one robot, sensors, software. For makers and educators.</p>
+          <p>One bed kit, one robot, sensors, software. Fits a backyard, shed, or greenhouse.</p>
           <p class="price">$599 – $899</p>
         </div>
         <div class="card">
           <h3>Automata Research</h3>
-          <p>Multiple robots, perception gantry, full ROS2 stack, Isaac Sim.</p>
+          <p>Multiple robots, perception gantry, full ROS2 stack, Isaac Sim. For labs and curricula.</p>
           <p class="price">$2,000 – $4,000</p>
         </div>
       </div>

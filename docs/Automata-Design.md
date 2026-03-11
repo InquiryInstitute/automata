@@ -4,9 +4,9 @@
 
 **An open research platform for embodied intelligence.**
 
-Automata is a physical robotics environment where autonomous construction vehicles learn to interact with real terrain.
+Automata is a physical robotics environment where autonomous construction vehicles learn to interact with real terrain — in a raised bed of soil, sand, or gravel.
 
-Inspired by robotics research labs and construction automation systems, Automata brings embodied AI experimentation into homes, schools, and research environments.
+Inspired by robotics research labs, construction automation, and the practical scale of garden and greenhouse beds, Automata brings embodied AI experimentation into homes, schools, and research environments.
 
 The platform combines:
 
@@ -38,7 +38,7 @@ Automata explores a fundamental question:
 
 ## Core Concept
 
-A **4×8 ft** robotics terrain bed containing soil, sand, or gravel where autonomous miniature construction vehicles operate.
+A **4×8 ft** robotics terrain bed — the same footprint as a standard raised garden or greenhouse bed — containing soil, sand, or gravel where autonomous miniature construction vehicles operate.
 
 Robots perform tasks such as:
 
@@ -48,7 +48,7 @@ Robots perform tasks such as:
 - hauling
 - terrain leveling
 
-while AI models learn physics-aware planning.
+while AI models learn physics-aware planning. The bed can double as a real garden: prepare soil, run experiments, add irrigation or planting, and let robots work alongside growing things.
 
 ---
 
@@ -92,6 +92,10 @@ The system can operate with:
 
 Each material produces different AI learning conditions.
 
+### Gardening & scale
+
+The 4×8 ft bed matches common **raised garden** and **greenhouse** dimensions. Automata can sit in a backyard, on a patio, or inside a greenhouse; robots work the same soil you might plant in. Optional irrigation and moisture sensors support both robotics experiments and real planting — terrain prep and growing in one footprint.
+
 ### Bed Features
 
 The bed includes:
@@ -101,11 +105,12 @@ The bed includes:
 - fiducial markers
 - calibration grid
 
-**Optional:**
+**Optional (gardening & growth):**
 
 - irrigation system
 - moisture sensors
-- plant growth experiments
+- plant growth experiments (e.g. starts or seed beds in one zone while robots work another)
+- greenhouse or covered placement for year-round use
 
 ---
 
