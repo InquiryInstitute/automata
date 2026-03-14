@@ -420,7 +420,7 @@ Individual robots and the base station. All vehicles run ESP32-S3 and micro-ROS;
 
 | Product       | Huina reference | Description | Price (kit) |
 |---------------|-----------------|-------------|-------------|
-| **Excavator** | 1550 / 1580     | Tracked excavator, arm + bucket. Dig, trench, load. 1:14 scale. | $65 – $85 |
+| **Excavator** | 1550 / 1580     | Tracked excavator, arm + bucket. Dig, trench, load. 1:14 scale. | $55 – $85 |
 | **Dump truck** | Huina dump truck | Haul soil, gravel. Articulated dump bed. Pairs with excavator. | $55 – $75 |
 | **Bulldozer** | Huina bulldozer  | Tracked dozer, blade. Grade, level, push. Terrain shaping. | $60 – $80 |
 | **Loader**    | Huina loader     | Front loader / wheel loader. Load, carry, place material. | $55 – $75 |
